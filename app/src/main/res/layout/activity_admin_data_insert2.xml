@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  tools:context=".ui.AdminDataInsert">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_gravity="center|bottom"
+      android:background="#80000000">
+      <TextView
+        android:id="@+id/sup"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="User"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:padding="16dp"/>
+      <TextView
+        android:id="@+id/sin"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="16dp"/>
+    </LinearLayout>
+  </FrameLayout>
+
+
+  <TextView
+    android:id="@+id/appPromptTv"
+    android:layout_width="345dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="80dp"
+    android:background="@drawable/btnformate"
+    android:padding="14dp"
+    android:text="Update Repository"
+    android:textAlignment="center"
+    android:textColor="#fff"
+    android:textSize="16dp" />
+
+  <TextView
+    android:id="@+id/catTv"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignStart="@+id/appPromptTv"
+    android:layout_marginTop="160dp"
+    android:background="@drawable/btnformate"
+    android:gravity="center"
+    android:padding="14dp"
+    android:text="Category"
+    android:textAlignment="center"
+    android:textColor="#fff"
+    android:textSize="12dp" />
+
+  <Spinner
+    android:id="@+id/catSpinner"
+    android:layout_width="192dp"
+    android:layout_height="47dp"
+    android:layout_alignStart="@+id/subcatSpinner"
+    android:layout_alignTop="@+id/catTv"
+    android:layout_marginRight="5dp"
+    android:entries="@array/cat_array"
+    android:gravity="center"
+    android:prompt="@string/cat"
+    android:text="Category"
+    android:textAlignment="center"
+    android:textColor="#fff"
+    android:textSize="12dp" />
+
+  <TextView
+    android:id="@+id/subCatTv"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignStart="@+id/appPromptTv"
+    android:layout_marginTop="235dp"
+    android:background="@drawable/btnformate"
+    android:gravity="center"
+    android:padding="14dp"
+    android:text="Sub - Category"
+    android:textAlignment="center"
+    android:textColor="#fff"
+    android:textSize="12dp" />
+
+  <Spinner
+    android:id="@+id/subcatSpinner"
+    android:layout_width="192dp"
+    android:layout_height="47dp"
+    android:layout_alignEnd="@+id/appPromptTv"
+    android:layout_alignTop="@+id/subCatTv"
+    android:layout_marginRight="5dp"
+    android:textAlignment="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toEndOf="@+id/subCatTv"
+    app:layout_constraintTop_toBottomOf="@+id/catSpinner" />
+
+
+  <TextView
+    android:id="@+id/descTv"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignStart="@+id/catTv"
+    android:layout_marginBottom="211dp"
+    android:background="@drawable/btnformate"
+    android:gravity="center"
+    android:padding="14dp"
+    android:text="Description"
+    android:textAlignment="center"
+    android:textColor="#fff"
+    android:textSize="12dp" />
+
+  <EditText
+    android:id="@+id/descEt"
+    android:layout_width="192dp"
+    android:layout_height="50dp"
+    android:layout_alignStart="@+id/catSpinner"
+    android:layout_alignTop="@+id/descTv"
+    android:ems="10"
+    android:hint="Description"
+    android:inputType="textPersonName"
+    android:textAlignment="center"
+    android:textSize="12dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toEndOf="@+id/descTv"
+    app:layout_constraintTop_toBottomOf="@+id/subcatSpinner" />
+
+  <TextView
+    android:id="@+id/firstAidTv"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignStart="@+id/catTv"
+    android:layout_marginBottom="133dp"
+    android:background="@drawable/btnformate"
+    android:gravity="center"
+    android:padding="14dp"
+    android:text="First - Aid"
+    android:textAlignment="center"
+    android:textColor="#fff"
+    android:textSize="12dp" />
+
+  <EditText
+    android:id="@+id/firstAidEt"
+    android:layout_width="199dp"
+    android:layout_height="47dp"
+    android:layout_alignStart="@+id/catSpinner"
+    android:layout_alignTop="@+id/firstAidTv"
+    android:ems="10"
+    android:hint="First-Aid Tips"
+    android:inputType="textPersonName"
+    android:textAlignment="center"
+    android:textSize="12dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/descEt" />
+
+  <TextView
+    android:id="@+id/saveTv"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="30dp"
+    android:background="@drawable/btnformate"
+    android:gravity="center"
+    android:padding="14dp"
+    android:text="Save"
+    android:textAlignment="center"
+    android:textColor="#fff"
+    android:textSize="12dp" />
+
+  <!--<TextView-->
+  <!--android:id="@+id/userInputTv"-->
+  <!--android:layout_width="match_parent"-->
+  <!--android:layout_height="34dp"-->
+  <!--android:layout_marginTop="15dp"-->
+  <!--android:gravity="center"-->
+  <!--android:textColor="#80000000"-->
+  <!--android:text="" />-->
+
+</RelativeLayout>

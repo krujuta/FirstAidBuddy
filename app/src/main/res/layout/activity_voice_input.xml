@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  android:background="@drawable/blue1"
+  tools:context=".VoiceInputActivity">
+
+  <TextView
+    android:id="@+id/textView"
+    android:layout_width="389dp"
+    android:layout_height="66dp"
+    android:layout_marginLeft="11dp"
+    android:layout_marginTop="150dp" />
+
+  <ImageView
+    android:id="@+id/micIv"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginLeft="330dp"
+    android:layout_marginTop="152dp"
+    android:src="@drawable/ic_mic" />
+
+  <EditText
+    android:id="@+id/searchTe"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="158dp"
+    android:ems="10"
+    android:hint=" Search Here"
+    android:inputType="textPersonName"
+    android:textAlignment="center"
+    android:textColor="#FFFFFF"
+    android:textColorHint="#FFFFFF" />
+
+  <ImageView
+    android:id="@+id/searchIv"
+    android:layout_width="50dp"
+    android:layout_height="46dp"
+    android:layout_marginLeft="255dp"
+    android:layout_marginTop="158dp"
+    android:src="@android:drawable/ic_menu_search" />
+
+  <ImageView
+    android:id="@+id/cameraIv"
+    android:layout_width="175dp"
+    android:layout_height="174dp"
+    android:layout_marginLeft="120dp"
+    android:layout_marginTop="400dp"
+    android:src="@drawable/screenshot_128" />
+
+</RelativeLayout>

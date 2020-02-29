@@ -1,0 +1,46 @@
+<resources>
+    <!--<string name="app_name">TfLiteImageClassification</string>-->
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="toggle_turn_on">NN:On</string>
+    <string name="toggle_turn_off">NN:Off</string>
+    <string name="toggle">Use NNAPI</string>
+    <string name="tflite">tflite</string>
+    <string name="nnapi">NNAPI</string>
+    <string name="threads">Threads:</string>
+
+    <string name="model">Model:</string>
+    <string-array name="models">
+        <item>Quantized</item>
+        <item>Float</item>
+    </string-array>
+
+    <string name="device">Device:</string>
+    <string-array name="devices">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>NNAPI</item>
+    </string-array>
+
+    <string name="app_name">First-Aid Buddy</string>
+    <string name="title_activity_user_page">UserPage</string>
+    <string name="title_activity_login_page">LoginPage</string>
+    <string name="title_activity_admin_data_insert">AdminDataInsert</string>
+
+
+    <!--for category-->
+    <string name="cat">Choose a Category</string>
+
+    <string-array name="cat_array">
+        <item>Ache</item>
+        <item>Beauty</item>
+        <item>Bite</item>
+        <item>Burn</item>
+        <item>Irritation Or Infection</item>
+        <item>Seasonal Illness</item>
+        <item>Wound</item>
+    </string-array>
+
+
+</resources>
